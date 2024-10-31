@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>400m Race Betting</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .betting-form {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+        }
+        label {
+            display: block;
+            margin: 10px 0;
+        }
+        select, input[type="number"], input[type="submit"] {
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            margin-bottom: 10px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="betting-form">
+        <h1>Bet on the 400m Race!</h1>
+        <form action="submit_bet.html" method="POST">
+            <label for="runner">Choose your runner:</label>
+            <select id="runner" name="runner">
+                <option value="Eithan">Lane 1 - Eithan (Odds: 1.5x)</option>
+                <option value="Henry">Lane 2 - Henry (Odds: 1.6x)</option>
+                <option value="Ahmed">Lane 3 - Ahmed (Odds: 1.6x)</option>
+                <option value="Bobby">Lane 4 - Bobby (Odds: 1.7x)</option>
+                <option value="Connor">Lane 5 - Connor (Odds: 1.5x)</option>
+                <option value="Morgan">Lane 6 - Morgan (Odds: 1.6x)</option>
+                <option value="Eli">Lane 7 - Eli (Odds: 1.8x)</option>
+                <option value="Jack">Lane 8 - Jack (Odds: 1.5x)</option>
+            </select>
+
+            <label for="betAmount">Bet Amount ($):</label>
+            <input type="number" id="betAmount" name="betAmount" min="1" required>
+
+            <input type="submit" value="Place Bet">
+        </form>
+    </div>
+</body>
+</html>
