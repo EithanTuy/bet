@@ -1,43 +1,134 @@
----
-layout: default
-title: Alden Muffin Tin
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Alden Muffin Tin</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+</head>
+<body>
+  <header>
+    <nav class="container-fluid">
+      <ul>
+        <li><strong>Alden Muffin Tin</strong></li>
+      </ul>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#reviews" role="button">Reviews</a></li>
+      </ul>
+    </nav>
+  </header>
 
-<header>
-  <h1>Alden Muffin Tin</h1>
-  <nav>
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#products">Products</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-</header>
+  <main class="container">
+    <section id="hero" class="hero-section">
+      <h1>Fresh Muffins & More Every Day</h1>
+      <p>Homemade goodness served with love in Alden.</p>
+    </section>
 
-<section id="hero">
-  <h2>Fresh Muffins Every Day</h2>
-  <p>Discover our delicious muffins baked with love.</p>
-</section>
+    <section id="about">
+      <h2>About Us</h2>
+      <p>At Alden Muffin Tin, we bake delicious muffins, breakfasts, and lunches made from the freshest ingredients. Whether you're here for a quick coffee or a hearty lunch, our cozy café has something for everyone.</p>
+    </section>
 
-<section id="about">
-  <h2>About Us</h2>
-  <p>Alden Muffin Tin is dedicated to delivering the best muffins in town.</p>
-</section>
+    <section id="menu">
+      <h2>Menu</h2>
+      <div class="tabs">
+        <button class="tab-button active" data-tab="breakfast">Breakfast</button>
+        <button class="tab-button" data-tab="lunch">Lunch</button>
+        <button class="tab-button" data-tab="drinks">Drinks</button>
+      </div>
 
-<section id="products">
-  <h2>Our Muffins</h2>
-  <ul class="product-list">
-    <li>Blueberry Bliss</li>
-    <li>Chocolate Delight</li>
-    <li>Classic Vanilla</li>
-  </ul>
-</section>
+      <div id="breakfast" class="tab-content active">
+        <ul>
+          <li>Quiche of the Day – $11.75 (Fresh fruit or tossed greens)</li>
+          <li>Avocado Toast – $9.00 (+ fried egg $1.25, sliced tomato $1.00)</li>
+          <li>Baked Muffin French Toast – $10.00 (With fruit & local maple syrup)</li>
+          <li>House-made Waffle – $7.00 (+ walnuts $2.00, choc chips $1.00)</li>
+          <li>Breakfast Sandwich – $7.00 (+ sausage $3.25, bacon $4.25)</li>
+          <li>Bagel with cured Salmon (lox) – $15.25</li>
+          <li>PB&J Toast & Fruit – $5.00</li>
+          <li>Fruit Cup – $5.50</li>
+        </ul>
+      </div>
 
-<section id="contact">
-  <h2>Contact</h2>
-  <p>Email us at <a href="mailto:info@aldenmuffintin.com">info@aldenmuffintin.com</a></p>
-</section>
+      <div id="lunch" class="tab-content">
+        <ul>
+          <li>Quiche of the Day – $11.75</li>
+          <li>House Salad – $11.00 (+ grilled chicken $6.00)</li>
+          <li>Tarragon Chicken Salad – $14.00</li>
+          <li>Grilled Cheese Sandwich – $9.50 (+ ham $3.50)</li>
+          <li>PB&J Sandwich – $9.50</li>
+          <li>Bagel with cured Salmon (lox) – $15.25</li>
+          <li>Grilled Chicken Sandwich – $14.00</li>
+          <li>BLT – $15.25</li>
+          <li>Tarragon Chicken Sandwich – $14.00</li>
+          <li>Soups – Tomato or Clam Chowder (Cup $5.50/$8.00, Bowl $8.00/$10.50)</li>
+        </ul>
+      </div>
 
-<footer>
-  <p>&copy; 2024 Alden Muffin Tin. All rights reserved.</p>
-</footer>
+      <div id="drinks" class="tab-content">
+        <ul>
+          <li>Muffin Tin Coffee – $3.00 (12oz) / $3.50 (16oz)</li>
+          <li>Americano – $4.00 / $4.50</li>
+          <li>Latte – $4.75 / $5.25</li>
+          <li>Mocha – $6.50 / $7.00</li>
+          <li>Cappuccino – $4.50</li>
+          <li>Matcha Latte – $5.50 / $6.00</li>
+          <li>Hot Tea – $3.50 / $3.75</li>
+          <li>Hot Cocoa – $4.25 / $5.00</li>
+          <li>Iced Coffee – $3.00</li>
+          <li>Fresh Cold Brew – $3.50</li>
+          <li>Juices (Orange, Apple, Cranberry) – $4.25</li>
+          <li>Lemonade – $3.50</li>
+          <li>Chocolate Milk – $4.00</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="reviews">
+      <h2>Customer Reviews</h2>
+      <span class="yelp-review" data-review-id="syLXDsxfvBXneQqJ1MhD4Q" data-hostname="www.yelp.com">
+        Read <a href="https://www.yelp.com/user_details?userid=GvVC6VaHrmZlODfDh9Oe3g" rel="nofollow noopener">Luke H.</a>'s 
+        <a href="https://www.yelp.com/biz/alden-muffin-tin-alden-2?hrid=syLXDsxfvBXneQqJ1MhD4Q" rel="nofollow noopener">review</a> of 
+        <a href="https://www.yelp.com/biz/d0DGZGJzaRVc-3eqctq3VQ" rel="nofollow noopener">Alden Muffin Tin</a> on 
+        <a href="https://www.yelp.com" rel="nofollow noopener">Yelp</a>
+        <script src="https://www.yelp.com/embed/widgets.js" type="text/javascript" async></script>
+      </span>
+    </section>
+
+    <section aria-label="Subscribe example">
+      <div class="container">
+        <article>
+          <hgroup>
+            <h2>Stay Updated</h2>
+            <h3>Join our newsletter for updates & offers</h3>
+          </hgroup>
+          <form class="grid">
+            <input type="text" id="firstname" name="firstname" placeholder="First Name" aria-label="First Name" required />
+            <input type="email" id="email" name="email" placeholder="Email Address" aria-label="Email Address" required />
+            <button type="submit" onclick="event.preventDefault()">Subscribe</button>
+          </form>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="container">
+    <small><a href="#about">About</a> • <a href="#menu">Menu</a></small>
+  </footer>
+
+  <script>
+    // Tab functionality
+    document.querySelectorAll('.tab-button').forEach(button => {
+      button.addEventListener('click', () => {
+        document.querySelectorAll('.tab-button').forEach(btn => btn.classList.remove('active'));
+        button.classList.add('active');
+        document.querySelectorAll('.tab-content').forEach(content => content.classList.remove('active'));
+        document.getElementById(button.dataset.tab).classList.add('active');
+      });
+    });
+  </script>
+</body>
+</html>
